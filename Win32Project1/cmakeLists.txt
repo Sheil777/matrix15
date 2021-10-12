@@ -1,0 +1,12 @@
+# add the executable
+add_executable(Project Win32Project1/Source.cpp Win32Project1/Source1.cpp)
+
+target_link_libraries(Project PUBLIC ProjectLib)
+
+target_include_directories(Project PUBLIC
+                          "D:/boost_1_77_0"
+                          )
+
+target_link_directories(Project PUBLIC
+                          "D:/boost_1_77_0/stage/lib"
+                          )
